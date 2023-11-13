@@ -1,0 +1,173 @@
+<!-- Complete this worksheet in HTML and CSS. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on HTML tags and CSS. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+
+            .alert {
+                height: 100px;
+                width: auto;
+                border: 2px solid black;
+                margin: 5px auto;
+                text-align:center;
+            }
+
+            .warning {
+                color: antiquewhite;
+                background: chocolate;
+            }
+            #byline {
+                color: coral ;
+            }
+            
+            }
+        h1 { 
+            color: turquoise; 
+            background: white;
+        }
+        
+            p {
+                color: #5A5A5A;
+                font-size: 16px;
+                font-family: 'Open Sans', serif;
+                width: 50%;
+            }
+            #quote {
+                color: gray;
+                font-style: italic;
+                border: white; 2px;
+            }
+
+            }
+            #bargraph {
+                border: 1px solid gray;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                width: 25%;
+            }
+            .bar_label {
+                color: red;
+            }
+            #longest {
+                width: 300px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #longer {
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #long {
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            li {
+                color: black;
+            }
+            #book {
+                border: 1px honeydew;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+    <!-- Messing with CSS -->
+    <div class="alert">  
+        <h3>Breaking news: [A small fire started in Newhouse lecture rooms]. </h3>
+        <p id= "byline">Reporting by JNL 221</p> 
+    </div> 
+        <h1 class="alert">My name is Ben and I'm a Junior BDJ student from Pittsburgh.</h1>
+        <p class="warning">I want to be a sports anchor one day.</p>
+        
+        <h2>My intro</h2>
+        
+         <p id="info"> I'm from <strong>Pittsburgh, Pennsylvania.</strong> I like to watch sports, listen to music, go on walks, and write. I'm studying <i>broadcast journalsim</i> at SU.</p>
+
+        <h2>My handles</h2>
+
+         <p class="name"> X:<a> @benjamindeitri1</a> Instagram:<a> bdeitrick02</a> 
+    
+        <h2> ~ Challenge: Why is my text maroon? ~</h2>
+        
+        <p>My text is gray.</p>
+
+
+        <h2>My favorite meme</h2>
+        
+        <img src="large_wink.png" alt="an image of a photograph of someone winking" height="786px" width="984px"> 
+
+    
+        <h2>Why I'm a great student</h2>
+        
+        <ul>
+            <li>I show up and pay attention in every class</li>
+            <li>I study hard for exams</li>
+            <li>I participate in class</li>
+            <li>If I'm ever confused, I'll ask for help</li>
+        </ul>
+        
+    
+        <h2>Top 3 most famous people from my hometown</h2>
+        
+        <ol> 
+            <li>Andy Warhol</li>
+            <li>Andrew Carnegie</li>
+            <li>Fred Rogers</li>
+        </ol> 
+
+
+        <h2> ~ Challenge: Read my poetry ~</h2>
+        
+        <p> 
+            I had a rough start <br /> 
+            But now I love my time here <br /> 
+            Hard work will pay off 
+        </p>
+
+        <h2>This is one of my favorite quotes</h2>
+        
+        <p id="quote"> <i>You never really understand a person until you consider things from his point of view...until you climb into his skin and walk around in it</i> 
+        <h3>Atticus Finch, To Kill a Mockingbird</h3>
+
+
+        <h2>These are more of my favorite books</h2>
+        <!-- Include: an unordered list of at least three books, list items should have a border -->
+        <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+        <ul class="book">
+            <li>Death of a Salesman</li>
+            <li>Dan Rooney: My 75 Years With the Pittsburgh Steelers</li>
+            <li>Favorite Childhood Book: Pendragon</li> 
+        </ul> 
+
+        
+
+        <h2>Here's how I normally spend my weekend</h2>
+        
+            <iframe title="Most of my Weekends are Spent Talking to Friends and Family" aria-label="Column Chart" id="datawrapper-chart-9Qlaw" src="https://datawrapper.dwcdn.net/9Qlaw/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+
+        <h3>~ Challenge: A very simple bar graph ~</h3>
+        <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+        <div id="bargraph">
+            <h4>Length of bars</h4>
+            <p class="bar_label">Long</p>
+            <div id="longest"></div>
+            <p class="bar_label">Longer</p>
+            <div id="longer"></div>
+            <p class="bar_label">Longest</p>
+            <div id="long"></div>
+        </div>
+     
+    </body>
+</html>
