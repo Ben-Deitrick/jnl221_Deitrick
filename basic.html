@@ -25,56 +25,53 @@
                 color: coral ;
             }
             
-            }
         h1 { 
             color: turquoise; 
             background: white;
         }
         
-            p {
-                color: #5A5A5A;
-                font-size: 16px;
-                font-family: 'Open Sans', serif;
-                width: 50%;
-            }
-            #quote {
-                color: gray;
-                font-style: italic;
-                border: white; 2px;
-            }
-
-            }
-            #bargraph {
-                border: 1px solid gray;
-                padding-left: 10px;
-                padding-bottom: 10px;
-                width: 25%;
-            }
-            .bar_label {
-                color: red;
-            }
-            #longest {
-                width: 300px;
-                height: 10px;
-                background: gray;
-                border: 1px solid red;
-            }
-            #longer {
-                height: 10px;
-                background: gray;
-                border: 1px solid red;
-            }
-            #long {
-                height: 10px;
-                background: gray;
-                border: 1px solid red;
-            }
-            li {
-                color: black;
-            }
-            #book {
-                border: 1px honeydew;
-            }
+        p {
+            color: #5A5A5A;
+            font-size: 16px;
+            font-family: 'Open Sans', serif;
+            width: 50%;
+        }
+        #quote {
+            color: gray;
+            font-style: italic;
+            border: white; 2px;
+        }
+        #bargraph {
+            border: 1px solid gray;
+            padding-left: 10px;
+            padding-bottom: 10px;
+            width: 25%;
+        }
+        .bar_label {
+            color: red;
+        }
+        #Friday {
+            width: 400px;
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+        }
+        #Monday {
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+            width: 200px;
+        }
+        #Wednesday {
+            height: 10px;
+            background: gray;
+            border: 1px solid red;
+            width: 100px;
+        }
+            
+        .book {
+            border: 5px dotted hotpink;
+        }
 
         </style>
     </head>
@@ -94,7 +91,8 @@
 
         <h2>My handles</h2>
 
-         <p class="name"> X:<a> @benjamindeitri1</a> Instagram:<a> bdeitrick02</a> 
+         <p class="name"> <a href="x.com/benjamindeitri1"> X: @benjamindeitri1</a>:<a href="instagram.com/bdeitrick02"> Instagram: bdeitrick02 </a> 
+        </p>
     
         <h2> ~ Challenge: Why is my text maroon? ~</h2>
         
@@ -103,13 +101,13 @@
 
         <h2>My favorite meme</h2>
         
-        <img src="large_wink.png" alt="an image of a photograph of someone winking" height="786px" width="984px"> 
+        <img src="large_wink.png" alt="an image of someone winking, which became a meme" height="300px" width="400px"> 
 
     
         <h2>Why I'm a great student</h2>
         
         <ul>
-            <li>I show up and pay attention in every class</li>
+            <li><strong>I show up and pay attention in every class</strong></li>
             <li>I study hard for exams</li>
             <li>I participate in class</li>
             <li>If I'm ever confused, I'll ask for help</li>
@@ -121,7 +119,7 @@
         <ol> 
             <li>Andy Warhol</li>
             <li>Andrew Carnegie</li>
-            <li>Fred Rogers</li>
+            <li><a href="https://www.rollins.edu/mister-rogers/Fred Rogers" target="blank"> Fred Rogers </a> </li>
         </ol> 
 
 
@@ -142,10 +140,10 @@
         <h2>These are more of my favorite books</h2>
         <!-- Include: an unordered list of at least three books, list items should have a border -->
         <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
-        <ul class="book">
-            <li>Death of a Salesman</li>
-            <li>Dan Rooney: My 75 Years With the Pittsburgh Steelers</li>
-            <li>Favorite Childhood Book: Pendragon</li> 
+        <ul>
+            <li class="book">Death of a Salesman, Arthur Miller</li>
+            <li class="book">Dan Rooney: My 75 Years With the Pittsburgh Steelers, Andrew E. Masich and David F. Halaas</li>
+            <li class="book">Favorite Childhood Book: Pendragon, D.J. MacHale</li> 
         </ul> 
 
         
@@ -159,14 +157,16 @@
         <h3>~ Challenge: A very simple bar graph ~</h3>
         <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
 
+        <h4>How Much Sleep I get Throughout the Week</h4>
+
         <div id="bargraph">
             <h4>Length of bars</h4>
-            <p class="bar_label">Long</p>
-            <div id="longest"></div>
-            <p class="bar_label">Longer</p>
-            <div id="longer"></div>
-            <p class="bar_label">Longest</p>
-            <div id="long"></div>
+            <p class="bar_label">Friday</p>
+            <div id="Friday"></div>
+            <p class="bar_label">Monday</p>
+            <div id="Monday"></div>
+            <p class="bar_label">Wednesday</p>
+            <div id="Wednesday"></div>
         </div>
      
     </body>
